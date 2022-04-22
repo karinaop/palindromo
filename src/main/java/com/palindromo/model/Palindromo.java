@@ -2,11 +2,25 @@ package com.palindromo.model;
 
 public class Palindromo {
 
-    public String invPalindromo(String palindromo) {
+    public Boolean invPalindromo(String palindromo) {
+        palindromo = removeCharacters(palindromo);
         
-        palindromo = new StringBuffer(palindromo).reverse().toString();
-        return palindromo;
+        String inversePalindromo = new StringBuffer(palindromo).reverse().toString();
+
+        if (palindromo.equals(inversePalindromo)) {
+            return true;
+        }
+        else {
+            return false;
+        }
+        
     }
 
-    
+    public String removeCharacters (String aux){
+        aux = aux.replaceAll("[^\\w\\d]", "");
+        aux = aux.replaceAll("[_]", "");
+        aux = aux.trim().toLowerCase();
+
+        return aux;
+    }
 }

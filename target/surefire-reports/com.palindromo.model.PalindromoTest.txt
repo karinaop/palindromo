@@ -1,7 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.palindromo.model.PalindromoTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.136 s <<< FAILURE! - in com.palindromo.model.PalindromoTest
-PalindromoTrue  Time elapsed: 0.104 s  <<< ERROR!
-java.lang.StackOverflowError
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.125 s - in com.palindromo.model.PalindromoTest

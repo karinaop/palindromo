@@ -8,11 +8,12 @@ public class PalindromoTest {
     @Test
     public void PalindromoTrue () {
     
-        Palindromo palindromo = new Palindromo("Rotator");
+        Palindromo palindromo = new Palindromo();
+        String word = "rotator";
+        String word1 = "madam";
 
-        palindromo.invPalindromo("Rotator");
+        assertEquals(true, palindromo.invPalindromo(word));
+        assertEquals(word1, palindromo.invPalindromo(word1));
 
-        assertEquals("Rotator", palindromo);
-
-    }    
+    }
 }
